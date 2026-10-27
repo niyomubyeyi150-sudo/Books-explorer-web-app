@@ -1,0 +1,271 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta name="description" content="Explore BookHaven, discover inspiring books, and find your next great read."/>
+    <title>BookHaven | Discover Your Next Chapter</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+
+  <body class="min-h-screen bg-[#F8F7F2] text-[#26372D]">
+
+   
+<header class="sticky top-0 z-50 border-b border-[#E5E3D9] bg-[#F8F7F2]">
+  <nav
+    class="relative mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8"
+    aria-label="Main navigation"
+  >
+    <a
+      href="./index.html"
+      class="text-2xl font-bold text-[#293B2B]"
+    >
+      BookHaven<span class="text-[#D99A42]">.</span>
+    </a>
+
+    <!-- Desktop navigation -->
+    <div class="hidden items-center gap-8 md:flex">
+      <a href="./index.html" class="font-medium text-[#293B2B] hover:text-[#66816A]">
+        Home
+      </a>
+      <a href="./favorites.html" class="font-medium text-[#293B2B] hover:text-[#66816A]">
+        Favorites
+      </a>
+      <a href="./about.html" class="font-medium text-[#293B2B] hover:text-[#66816A]">
+        About
+      </a>
+    </div>
+
+    <!-- Hamburger button for mobile -->
+    <button
+      id="menu-toggle"
+      type="button"
+      class="flex h-10 w-10 items-center justify-center rounded-lg border border-[#E5E3D9] text-2xl text-[#293B2B] hover:bg-[#E5E3D9] md:hidden"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <span id="menu-icon" aria-hidden="true">☰</span>
+    </button>
+
+    <!-- Mobile navigation -->
+    <div
+      id="mobile-menu"
+      class="absolute left-0 right-0 top-full z-50 hidden flex-col gap-1 border-b border-[#E5E3D9] bg-[#F8F7F2] p-5 shadow-lg md:hidden"
+    >
+      <a href="./index.html" class="rounded-lg px-4 py-3 font-medium text-[#293B2B] hover:bg-[#E5E3D9]">
+        Home
+      </a>
+      <a href="./favorites.html" class="rounded-lg px-4 py-3 font-medium text-[#293B2B] hover:bg-[#E5E3D9]">
+        Favorites
+      </a>
+      <a href="./about.html" class="rounded-lg px-4 py-3 font-medium text-[#293B2B] hover:bg-[#E5E3D9]">
+        About
+      </a>
+    </div>
+  </nav>
+</header>
+
+
+    <main>
+
+      <!-- Hero Banner -->
+      <section class="relative mt-6 flex min-h-300px items-center overflow-hidden sm:min-h-350px lg:min-h-390px">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1663045795373-428aac482390?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+          alt="Bookshelves in a welcoming library"
+          class="absolute inset-0 h-full w-full object-cover object-center"/>
+
+        <div
+          class="absolute inset-0 bg-[#17251C]/30"
+          aria-hidden="true"
+        ></div>
+
+        <div
+          class="relative z-10 mx-auto w-full max-w-7xl px-5 py-10 sm:px-8 sm:py-12 lg:px-12 lg:py-14"
+        >
+          <div class="max-w-3xl">
+
+            <p
+              class="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-[#D9C49A] sm:text-sm sm:tracking-[0.25em]"
+            >
+              Welcome to BookHaven
+            </p>
+
+            <h1
+              class="text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl lg:text-6xl"
+            >
+              Every book opens
+              <span class="block text-[#D9C49A]">
+                a new world.
+              </span>
+            </h1>
+
+            <p
+              class="mt-4 max-w-2xl text-sm leading-6 text-white/90 sm:mt-5 sm:text-base sm:leading-7"
+            >
+              Discover stories that inspire you, explore ideas that change
+              your perspective, and find adventures waiting on every page.
+              Your next favorite book starts here.
+            </p>
+
+            <div class="mt-6 flex flex-wrap items-center gap-4 sm:mt-7">
+              <a
+                href="#featured-books"
+                class="inline-flex items-center rounded-lg bg-[#D99A42] px-5 py-3 text-sm font-bold text-[#293B2B] transition hover:bg-[#E7C38A] focus:outline-2 focus:outline-offset-4 focus:outline-white sm:px-6 sm:text-base"
+              >
+                Explore Our Books
+                <span class="ml-2" aria-hidden="true">→</span>
+              </a>
+
+              <span class="text-sm font-medium text-white/90">
+                Read. Imagine. Grow.
+              </span>
+            </div>
+
+            <p class="mt-8 text-sm italic text-white/80">
+              "A world of stories is waiting for you."
+            </p>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Books Section -->
+      <section
+        id="featured-books"
+        class="bg-white px-4 py-10 sm:px-6 sm:py-12 lg:px-8"
+      >
+        <div class="mx-auto max-w-7xl">
+
+          <div
+            class="mb-7 flex flex-col gap-3 sm:mb-8 sm:flex-row sm:items-end sm:justify-between"
+          >
+            <div>
+              <p
+                class="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-[#66816A] sm:text-sm"
+              >
+                Start exploring
+              </p>
+
+              <h2 class="text-2xl font-extrabold sm:text-3xl lg:text-4xl">
+                Discover Your Next Read
+              </h2>
+
+              <p
+                class="mt-2 max-w-2xl text-sm leading-6 text-[#687665] sm:text-base sm:leading-7"
+              >
+                From powerful ideas to unforgettable adventures, every
+                great journey starts with a book.
+              </p>
+            </div>
+
+            <p class="text-sm text-[#687665]">
+              A collection of sample books
+            </p>
+          </div>
+
+          
+<!-- Search books by title -->
+<div class="mt-6">
+  <div class="flex flex-col gap-3 sm:flex-row">
+    <input
+      id="search-input"
+      type="search"
+      placeholder="Search books by title..."
+      aria-label="Search books by title"
+      class="min-w-0 flex-1 rounded-lg border border-[#E5E3D9] bg-white px-4 py-3 outline-none focus:border-[#3F6948] focus:ring-2 focus:ring-[#C6D7A9]"
+    />
+
+    <button
+      id="search-button"
+      type="button"
+      class="rounded-lg bg-[#293B2B] px-6 py-3 font-semibold text-white transition hover:bg-[#3F6948]"
+    >
+      Search
+    </button>
+  </div>
+
+  <p
+    id="books-status"
+    role="status"
+    aria-live="polite"
+    class="mt-4 text-sm text-[#687665]"
+  >
+    Loading books...
+  </p>
+
+  <div
+    id="book-list"
+    class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 xl:grid-cols-4"
+  ></div>
+</div>
+
+
+        </div>
+      </section>
+
+      <section class="px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
+        <div
+          class="mx-auto max-w-5xl rounded-2xl bg-[#293B2B] px-5 py-9 text-center text-white sm:rounded-3xl sm:px-10 sm:py-12"
+        >
+          <h2 class="text-2xl font-extrabold sm:text-3xl lg:text-4xl">
+            Your next great story starts here.
+          </h2>
+
+          <p
+            class="mx-auto mt-3 max-w-2xl text-sm leading-6 text-[#E5E3D9] sm:mt-4 sm:text-base sm:leading-7"
+          >
+            Make time for the stories that inspire you. Explore new ideas,
+            discover different worlds, and let every page take you somewhere new.
+          </p>
+
+          <a
+            href="#featured-books"
+            class="mt-6 inline-flex rounded-lg bg-[#D99A42] px-6 py-3 text-sm font-bold text-[#293B2B] transition hover:bg-[#E7C38A] sm:mt-7 sm:text-base"
+          >
+            Start Exploring
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="border-t border-[#E5E3D9] bg-white px-4 py-6 sm:px-6 sm:py-8 lg:px-8"
+    >
+      <div
+        class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left"
+      >
+        <div>
+          <a
+            href="./index.html"
+            class="text-xl font-extrabold text-[#26372D]"
+          >
+            BookHaven<span class="text-[#D99A42]">.</span>
+          </a>
+
+          <p class="mt-1 text-sm text-[#687665]">
+            Discover your next chapter, one page at a time.
+          </p>
+        </div>
+
+        <div class="flex gap-5 text-sm text-[#687665]">
+          <a href="./index.html" class="hover:text-[#3F6948]">Home</a>
+          <a href="./favorites.html" class="hover:text-[#3F6948]">
+            Favorites
+          </a>
+          <a href="./about.html" class="hover:text-[#3F6948]">About</a>
+        </div>
+
+        <p class="text-xs text-[#687665]">
+          © 2026 BookHaven. Made for curious minds.
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+
+  </body>
+</html>
